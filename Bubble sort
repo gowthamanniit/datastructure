@@ -1,3 +1,60 @@
+		1) bubble sort.
+		
+	n=5 numbers: a[]={44,55,66,11,34};
+
+
+	n = 5 values: (n-1)4 pass  
+
+	1 pass : n-1(4) comparison
+		comp-1:  44 55 66 11 34
+		comp-2:  44 55 66 11 34
+		comp-3:	 44 55 11 66 34
+		comp-4:  44 55 11 34 66
+	2 pass : n-2(3) comparison
+		comp-1:  44 55 11 34 66
+		comp-2:  44 11 55 34 66
+		comp-3:	 44 11 34 55 66 
+	3 pass : n-3(2) comparison
+		comp-1:   11 44 34 55 66 
+		comp-2:   11 34 44 55 66
+	4 pass : n-4(1) comparison
+		comp-1    11 34	44 55 66
+// c++
+
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	int a[]={44,55,66,11,34};
+	int i,j,temp;
+	int n=sizeof(a)/2;
+	clrscr();
+	for(i=1;i<n;i++)  // total pass n-1
+	{
+		for(j=0;j<n-i;j++)
+		{
+			if(a[j]>a[j+1])
+			{
+			    temp=a[j];
+			    a[j]=a[j+1];
+			    a[j+1]=temp;
+			}
+		}
+	}
+	cout<<"\n bubble sort algoritham :\n";
+	for(i=0;i<n;i++)
+	{
+	 cout<<"  "<<a[i];
+	}
+getch();
+}
+
+
+
+
+
+
+// java
 public class BubbleSort {
 
 	public static void main(String[] args) {
