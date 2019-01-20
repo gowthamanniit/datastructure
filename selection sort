@@ -1,3 +1,14 @@
+selection sort:
+==============
+main use:
+	maximum only one swap elements per pass
+	
+	ex:
+		step 1: first take minmum value of the index.(store min varaile ex: min=j)
+		step 2: after finish first pass
+		step 3: swap. (a[i],a[mim])
+
+//===========================================
 import java.util.Scanner;
 public class SelectionSort {
 
