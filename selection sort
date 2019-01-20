@@ -8,6 +8,20 @@ main use:
 		step 2: after finish first pass
 		step 3: swap. (a[i],a[mim])
 
+
+size=5:
+	total pass:
+			n-1(4) pass
+//=====================================
+
+1 pass:    n-1 (4) comparison
+2 pass     n-2 (3) comparision
+3 pass    n-3  (2) comparision
+4 pass   n-4 (1) comparision
+
+			
+			
+			
 //===========================================
 import java.util.Scanner;
 public class SelectionSort {
