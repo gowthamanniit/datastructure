@@ -1,0 +1,81 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	     int sn;  // searching number
+         int arr[]={22,44,55,55,66,77,88}; // array undefined
+         int i; // index 
+         boolean isfound=false; // to check found or not in an array
+         int len=arr.length;
+         
+         Scanner scan=new Scanner(System.in);
+         System.out.println("Enter Searching Number:");
+         sn=scan.nextInt();
+         
+         
+         for(i=0;i<len;i++)
+         {
+             if(sn==arr[i])
+             {
+                 isfound=true;
+                 System.out.println(" the value:"+sn+" is found at index:"+(i+1));
+                 break;
+             }
+         }
+         
+         if(isfound==false)
+         {
+             System.out.println(sn+" number is not found ");
+         }
+
+	}
+
+
+}
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	     int sn;  // searching number
+         int arr[]={66,22,44,55,55,66,77,55,66,55,66}; // array undefined
+         int i; // index 
+         boolean isfound=false; // to check found or not in an array
+         int len=arr.length;
+         boolean firstTime=false;
+         
+         Scanner scan=new Scanner(System.in);
+         System.out.println("Enter Searching Number:");
+         sn=scan.nextInt();
+         
+         
+         for(i=0;i<len;i++)
+         {
+             if(sn==arr[i])
+             {
+                 isfound=true;
+                 
+                 if (firstTime==false)
+                 {
+                 System.out.print(" the value:"+sn+" is found at index:"+(i+1));
+                 firstTime=true;
+                 }
+                 else
+                 {
+                     System.out.print(" --> "+(i+1));
+                 }
+                 
+                 //break;
+             }
+         }
+         
+         if(isfound==false)
+         {
+             System.out.println(sn+" number is not found ");
+         }
+
+	}
+}
+

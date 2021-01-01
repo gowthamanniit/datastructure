@@ -1,0 +1,17 @@
+syllabus data structure
+=======================
+–Array
+–Pointer
+–Function normal
+-recursive function
+–Structure
+–Pointer, Structure with Function
+–Stack theory
+–Stack program
+–queue theory
+–queue program
+–Linked List (Single ,Double ,Circular,
+Header)
+–Tree(binary tree)
+–Searching(binary,lenear)
+–Sorting

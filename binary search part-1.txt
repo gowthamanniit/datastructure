@@ -1,0 +1,66 @@
+step 1:
+
+    int ans=ob.searchElement(arr,left,right,se);
+
+			     1     2    3     4
+
+		1) 11 22 33 44 55
+		2) 0 - left index
+		3) 4 - right index
+		4) 33 - searching element
+
+step 2:
+
+  int searchElement(int arr[],int l,int r,int s)
+
+			// {11,22..},0,4,33
+
+     {
+       int mid=(l+r)/2; // (0+4)/2
+		        // =4/2 => mid= 2
+	
+       
+       if(s==arr[mid])   // 33==arr[2] (true)
+          return mid;	 //  return 2 
+          	
+          return -1;     // not found
+     }
+
+step 3:
+
+	int ans=2
+
+	print.... thats all.
+
+
+public class Bsearch 
+{
+     int searchElement(int arr[],int l,int r,int s)
+     {
+       int mid=(l+r)/2;
+       
+       if(s==arr[mid])
+          return mid;
+          
+          return -1;
+     }
+  
+    public static void main(String[] args) 
+    {
+      int arr[]={11,22,33,44,55};
+      int len=arr.length;
+      int left=0;        // 0 index of array
+      int right=len-1;   // 4 th index of array(last)
+      
+      int se=133;  // input searching Element
+      
+      Bsearch ob=new Bsearch();
+      
+      int ans=ob.searchElement(arr,left,right,se);
+      
+      if(ans==-1)
+      System.out.println(" not found ");
+      else
+      System.out.println(" the searching element "+se+" is found at "+ans+" index.");
+    }
+}

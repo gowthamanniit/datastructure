@@ -1,0 +1,65 @@
+binary search:
+==============
+rules:
+======
+	rule 1) array must be sorted.(ascending)
+	ex:
+	int arr[]={22,33,77,88,99};
+
+	rule 2) declare variable.
+	       - find length of array.
+	       - left (array 0 index)
+	       - right (array length)
+			ie. last index.
+	       - mid	(middle position)
+		 mid=(left+right)/2
+	       - searching element
+	rule 3)
+	       i) check arr[mid]=searching element
+			-->solution   
+		ii) searchingelement<arr[mid]
+		        -->left=0
+			-->right=mid-1
+		iii) searchingelement>arr[mid]
+			-->left=mid+1
+		        -->right=len of aray
+
+
+
+
+ (very simple method 1)
+========================
+
+choice 1:searching element directly middle position.
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+			
+	
+			
+	

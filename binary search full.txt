@@ -1,0 +1,138 @@
+Binary search:
+==============
+
+first level: seen yesterday
+	     ex:
+		if(arr[mid]==searchingelement)
+second level:
+	   ex:
+		if searchingelement < arr[mid]
+
+		left = 0
+		right = mid-1
+advantage:
+	 no need to check after middle elements.
+	 because the values lessthan middle.
+	 that is binary search.
+	
+	
+example:
+	arr={11,22,33,44,55,66,77,88,99,10,20};
+	se = 33
+	output: 33 is found at index 2
+
+	left = 0 (first index - 11)
+	right= 10 (last index - 20)
+	middle = 5 (center index -66)
+	
+	level1:
+	=======
+	if(se==arr[mid]) 
+	   33==66  // false
+	level2:
+	=======
+	if(se<arr[mid])  // 33<66  true
+	
+	left =0 
+	right = mid-1 (5-1) = 4
+
+	arr={11,22,33,44,55, no need...}
+             0     m     4
+             left        right
+		
+level 3:
+========
+  arr={11,22,33,44,55,66,77,88,99,10,20};
+  
+  se = 99 (searcing element)
+
+  left =0 (11)
+  mid  = 5 (66)
+  right=10 (20)
+
+	  if (se==arr[mid])   // 99==66 false
+	
+	  if (se<arr[mid])   // 99<66 false
+
+	  if (se>arr[mid])   // 99>66 true
+	  
+		left = mid+1  (5+1=6) 
+		ie. left = 6
+		right = no change 10 the index
+		middle =  left + (right-left)/2
+			  6 + (10-6)/2
+			=  6 + 4/2 
+			= 6+2
+		middle	= 8
+
+	arr={11,22,33,44,55,66,77,88,99,10,20};
+	     0  1   2  3  4  5  6  7  8  9 10
+fist time:   l		     m	            r
+second time                     l     m     r
+
+  
+		
+	
+		
+		
+ 
+ 
+
+	   
+	 
+
+
+
+	
+
+public class Bsearch 
+{
+     int searchElement(int arr[],int l,int r,int s)
+     {
+       int mid=l+(r-l)/2;
+       
+       if(s==arr[mid])   // first level ==
+          return mid;
+          
+       if (s<arr[mid])   // second level <
+       {
+         l=0;
+         r=mid-1;
+         return searchElement(arr,l,r,s);
+       }
+       
+       if (s>arr[mid])  // third level >
+          {
+            l=mid+1;
+            return searchElement(arr,l,r,s);
+          }
+          
+          return -1;
+     }
+  
+    public static void main(String[] args) 
+    {
+      int arr[]={11,22,33,44,55,66,77,88,99,10,20};
+      int len=arr.length;
+      int left=0;        // 0 index of array
+      int right=len-1;   // 10 th index of array(last)
+      
+      int se=99;  // input searching Element
+      
+      Bsearch ob=new Bsearch();
+      
+      int ans=ob.searchElement(arr,left,right,se);
+      
+      if(ans==-1)
+      System.out.println(" not found ");
+      else
+      System.out.println(" the searching element "+se+" is found at "+ans+" index.");
+    }
+}
+	
+
+
+
+
+
+

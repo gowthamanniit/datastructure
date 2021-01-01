@@ -1,0 +1,86 @@
+sorting meaning:
+================
+def: arranging elements either ascending or descending.
+
+Bubble Sort:
+============
+5 1 4 2 9 8
+output:
+=======
+1 2 4 5 8 9
+
+
+pass :1   
+ elements:	 5 1 4 2 9 8
+ array index:  	 0 1 2 3 4 5
+ 
+ compare:       5>1
+		 true
+		 swap(interchange)
+	         1 5 4 2 9 8
+		   5>4
+		   true
+		 1 4 5 2 9 8
+		     5>2
+		     true
+		 1 4 2 5 9 8
+		       5>9
+			FALSE
+		1 4 2 5 9 8
+			9>8
+			TRUE
+		1 4 2 5 8 9		 		
+
+pass 2:
+		1 4 2 5 8
+		1>4 false (don't swap)
+		  4>2 true (swap)
+		1 2 4 5 8
+		    4>5 false(dont sqp)
+		      5>8 false	(dont swap)
+
+pass 3:
+		1 4 2 5
+		1>4 false
+		  4>2 true (swap)
+		1 2 4 5
+		    4>5 (false)
+pass 4:
+		1 2 4
+		1>2 false
+		  2>4 false
+pass 5:
+		1 2
+		1>2 false
+
+final
+	1 2 4 5 8 9	  
+		
+			
+
+step 1(i=0): 5 1 4 2 9 8
+      (j=0 to 5)	
+        5>1
+        1 5 4 2 9 8
+          5>4
+        1 4 5 2 9 8
+            5>2
+	1 4 2 5 9 8
+              5>9 (false)
+	1 4 2 5 9 8
+		9>8
+	1 4 2 5 8 9
+                  = (len-1-i) 
+step 2:(i=1)
+       (j=0 to 4)
+step3:(i=2)
+	j=0 to 3
+step 4:(i=3)
+	j=0 to 2
+step 5 i=4
+	j=0 ot 1
+that's it.
+==============	
+	     
+		
+			

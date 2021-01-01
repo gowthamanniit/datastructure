@@ -1,0 +1,94 @@
+now we will see linear search:
+===============================
+
+algorithm:
+==============
+
+1) array create with list of values
+ex:
+int a[]={22,33,44,55,66,77};
+2)  get the value at runtime for searching number.
+
+3) find length of array.
+
+4) compare searching number in an array.
+
+5) if found --> print array index
+   ortherwise --> print not found in an array.
+
+
+searching char's:
+=================
+step 1: declare a variable  to get string
+
+	ex:(in java)
+	String t=".....";
+	ex(in c,cpp)
+	char t[]=".......";
+
+step 2: 
+	declare a variabe to find index
+	ex:
+	int i=0;
+step 2.1:
+	find length of text:
+	java: var.length();
+	c,cpp: var
+
+step 3: repeat until the char is found in String.
+
+	ex:
+	
+	while(i<len)
+	{
+	.....
+
+	}
+
+step 4: print index or not found.
+
+
+
+	  
+	
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

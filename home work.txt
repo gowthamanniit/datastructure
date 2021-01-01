@@ -1,0 +1,12 @@
+	program title: find maximum repeat char's
+	
+	input:
+	text:				
+	       decabccdc(input)
+	ouput:
+	   ascending:abccccdde 
+	   max repeat: c is max repeat char 4 times.
+
+
+
+					
